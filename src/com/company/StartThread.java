@@ -1,18 +1,15 @@
 package com.company;
 
 public class StartThread extends Thread {
-    StartThread startThread = new StartThread();
-    static int i = 51;
-
+    static int i = 0;
     @Override
     public void run() {
-        if (i < 50) {
+        for  ( int i=50;i > 0; i--) {
             Thread thread1 = new StartThread();
             System.out.println(thread1.getName());
 
 
-        } else {
-            System.out.println("Too many threads");
+
 
 
 
