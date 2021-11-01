@@ -4,9 +4,7 @@ import com.company.task2.CoffeeMachine;
 import lombok.Getter;
 import lombok.Setter;
 
-@Setter
 
-@Getter
 public class ServerCoffee extends CoffeeMachine {
     public void americano() {
         int result = (water - 20)+ (coffee -25)+(milk-43);
